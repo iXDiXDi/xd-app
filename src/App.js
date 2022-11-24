@@ -9,20 +9,23 @@ import Settings from "./Components/Settings/Settings";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 
-const App = (props) => {
+const App = () => {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <Navbar/>
                 <div className='app-wrapper-content'>
-                   <Routes>
-                    <Route path='/dialogs' element={<DialogsContainer />}/>
-                    <Route path='/profile' element={<Profile />}/>
-                    <Route path='/news' element={<News/>}/>
-                    <Route path='/music' element={<Music/>}/>
-                    <Route path='/settings' element={<Settings/>}/>
-                   </Routes>
+                    <Routes>
+                        <Route path='/dialogs' element={<DialogsContainer/>}/>
+                        <Route path='/profile' element={<Profile/>}/>
+                        <Route path='/news' element={<News/>}/>
+                        <Route path='/music' element={<Music/>}/>
+                        <Route path='/settings' element={<Settings/>}/>
+                        <Route path='/users' element={<div>Users</div>}/>
+
+
+                    </Routes>
                 </div>
             </div>
         </BrowserRouter>

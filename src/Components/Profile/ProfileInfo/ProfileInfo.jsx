@@ -14,7 +14,7 @@ const ProfileInfo = (props) => {
                      src="https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg"/>
             </div>
             <div className={s.descriptionBlock}>
-                <img src={props.profile.photos.large}/>
+                <img src={props.profile.photo.large}/>
                 ava + drscription
             </div>
         </div>
